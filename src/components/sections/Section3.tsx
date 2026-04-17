@@ -71,9 +71,14 @@ export default function Section3() {
             </p>
           </div>
           
-          <div className="mt-auto px-4 py-4 bg-[#0A0A0B] border border-white/10 rounded-xl text-center shadow-inner">
-            <p className="text-slate-200 font-medium text-base md:text-lg">Resultado: "Sí, tiene sal"</p>
-            <p className="text-slate-500 font-light text-xs md:text-sm mt-1">No da probabilidades, solo usa la cucharada para desmentir la suposición inicial.</p>
+          <div className="mt-auto px-4 py-4 bg-[#0A0A0B] border border-white/10 rounded-xl text-center shadow-inner relative z-10 group overflow-hidden">
+            <p className="text-slate-200 font-medium text-base md:text-lg mb-1 relative z-10">Conclusión</p>
+            <p className="text-slate-500 font-light text-xs md:text-sm relative z-10 group-hover:hidden transition-all duration-300">
+              No da probabilidades, solo usa la cucharada para desmentir la suposición inicial.
+            </p>
+            <p className="text-slate-300 font-light text-xs md:text-sm hidden group-hover:block transition-all duration-300 relative z-10 drop-shadow-md">
+              Evalúa si la nueva evidencia <strong>rompe una regla fija</strong>. Ideal para que las máquinas tomen decisiones automáticas y binarias (Sí/No).
+            </p>
           </div>
         </motion.div>
 
@@ -107,9 +112,15 @@ export default function Section3() {
             </p>
           </div>
           
-          <div className="mt-auto px-4 py-4 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-xl text-center shadow-inner relative z-10">
-            <p className="text-[#D4AF37] font-medium text-base md:text-lg">Resultado: 95% seguro</p>
-            <p className="text-[#D4AF37]/70 font-light text-xs md:text-sm mt-1">Mezcla las pistas del pasado con la evidencia del presente para dar una probabilidad viva.</p>
+          <div className="mt-auto px-4 py-4 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-xl text-center shadow-inner relative z-10 group overflow-hidden">
+            <div className="absolute inset-0 bg-[#D4AF37]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <p className="text-[#D4AF37] font-medium text-base md:text-lg mb-1 relative z-10">Conclusión</p>
+            <p className="text-[#D4AF37]/70 font-light text-xs md:text-sm relative z-10 group-hover:hidden transition-all duration-300">
+              Mezcla las pistas del pasado con la evidencia del presente para dar una probabilidad viva.
+            </p>
+            <p className="text-[#ebca62] font-light text-xs md:text-sm hidden group-hover:block transition-all duration-300 relative z-10 drop-shadow-md">
+              Evalúa cómo los datos <strong>cambian la certeza</strong> que ya tenías. Ideal para medir la confianza real en un problema complejo.
+            </p>
           </div>
         </motion.div>
       </motion.div>
